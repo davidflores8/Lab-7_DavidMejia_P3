@@ -1,5 +1,8 @@
 #include "non.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::stringstream;
 
 non::non(){
@@ -26,7 +29,9 @@ int non::getFuerza(){
 
 string non::toString(){
     stringstream retorno;
-    retorno<<"Non-bender\n Trabajo que realiza: "<<trabajo<<"\n Fuerza: "<<fuerza<<"\nVelocidad: "<<velocidad<<"\n"<<endl;
+    cout<<"Non-bender\n Trabajo que realiza: "<<trabajo;
+    cout<<"\nFuerza: "<<fuerza;
+    cout<<"\nVelocidad: "<<velocidad;
     return retorno.str();
 }
 

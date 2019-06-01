@@ -1,5 +1,8 @@
 #include "Fire.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::stringstream;
 
 Fire::Fire(){
@@ -30,7 +33,8 @@ void Fire::setVictorias(int v){
 string Fire::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Fire Bender:\n Cantidad de cicatrices: "<<cicatrices<<"\nCantidad de victorias en Pai Sho: "<<victorias<<"\n";
+    cout<<"Fire Bender:\n Cantidad de cicatrices: "<<cicatrices;
+    cout<<"\nCantidad de victorias en Pai Sho: "<<victorias<<"\n";
     r=retorno.str();
     return r;
 }

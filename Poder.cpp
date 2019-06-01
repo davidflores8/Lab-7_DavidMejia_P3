@@ -3,6 +3,7 @@
 #include <iostream>
 using std::endl;
 using std::cin;
+using std::cout;
 using std::stringstream;
 
 Poder::Poder(){
@@ -25,7 +26,8 @@ int Poder::getNivel(){
 string Poder::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Poder: \nNombre: "<<nombre<<"\nNivel de poder: "<<nivel<<"\n";
+    cout<<"Poder: \nNombre: "<<nombre;
+    cout<<"\nNivel de poder: "<<nivel;
     r=retorno.str();
     return r;
 }

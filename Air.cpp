@@ -1,5 +1,8 @@
 #include "Air.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::stringstream;
 
 Air::Air(){
@@ -30,7 +33,8 @@ void Air::setPelo(int p){
 string Air::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Air: \nCantidad de flechas: "<<flechas<<"\nCantidad de pelo: "<<pelo<<"\n";
+    cout<<"Air: \nCantidad de flechas: "<<flechas;
+    cout<<"\nCantidad de pelo: "<<pelo<<"\n";
     r=retorno.str();
     return retorno.str();
 }

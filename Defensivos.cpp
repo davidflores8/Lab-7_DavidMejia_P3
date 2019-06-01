@@ -1,5 +1,9 @@
 #include "Defensivos.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::cout;
 using std::stringstream;
 
 Defensivos::Defensivos(){
@@ -24,7 +28,9 @@ int Defensivos::getDuracion(){
 string Defensivos::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Resistencia: "<<resistencia<<"\n Duracion: "<<duracion<<"\n"<<endl;
+    cout<<Poder::toString();
+    cout<<"\nResistencia: "<<resistencia;
+    cout<<"\nDuracion: "<<duracion;
     r=retorno.str();
     return r;
     

@@ -49,7 +49,7 @@ int main()  {
                 cout<<"Ingrese edad: "<<endl;
                 cin>>edad;
                 cout<<"Que tipo de elemento tiene? "<<endl;
-                cout<<"1.Air Bender\n2. Fire Bender \n3. Water Bender\n4.Earth Bender\n5.Non-Bender"<<endl;
+                cout<<"1.Air Bender\n2.Fire Bender \n3.Water Bender\n4.Earth Bender\n5.Non-Bender"<<endl;
                 cout<<"Ingrese su respuesta: "<<endl;
                 cin>>t_e;
                 switch(t_e){
@@ -118,7 +118,7 @@ int main()  {
                     int nivel;
                     cout<<" "<<endl;
                     cout<<"Ingrese su tipo de poder: "<<endl;
-                    cout<<"1. Ofensivo\n2.Defensivo\n3.Curativo\n4.Invocacion de mascota"<<endl;
+                    cout<<"1.Ofensivo\n2.Defensivo\n3.Curativo\n4.Invocacion de mascota"<<endl;
                     cin>>p;
                     cout<<"Ingrese el nombre: "<<endl;
                     cin>>nombre_;
@@ -180,12 +180,13 @@ int main()  {
             }
             break;
             case 2:{
+                cout<<"WATER BENDER"<<endl;
                 for (int i = 0; i <personas.size(); i++)
                 {
+                    
 
                     if(personas[i]->getElemento()->getClass().compare("Water")==0){
                         personas[i]->toString();
-                        cout<<" "<<endl;
                         cout<<" "<<endl;
                     }
                     
@@ -193,52 +194,51 @@ int main()  {
                 }
                 cout<<" "<<endl;
                 cout<<" "<<endl;
+                cout<<"AIR BENDER"<<endl;
                 for (int i = 0; i <personas.size(); i++)
                 {
 
                     if(personas[i]->getElemento()->getClass().compare("Air")==0){
                         personas[i]->toString();
                         cout<<" "<<endl;
-                        cout<<" "<<endl;
                     }
                     
 
                 }
                 cout<<" "<<endl;
                 cout<<" "<<endl;
+                cout<<"FIRE BENDER"<<endl;
                 for (int i = 0; i <personas.size(); i++)
                 {
 
                     if(personas[i]->getElemento()->getClass().compare("Fire")==0){
                         personas[i]->toString();
                         cout<<" "<<endl;
-                        cout<<" "<<endl;
                     }
                     
 
                 }
                 cout<<" "<<endl;
                 cout<<" "<<endl;
+                cout<<"EARTH BENDER"<<endl;
                 for (int i = 0; i <personas.size(); i++)
                 {
 
                     if(personas[i]->getElemento()->getClass().compare("Earth")==0){
                         personas[i]->toString();
                         cout<<" "<<endl;
-                        cout<<" "<<endl;
                     }
                     
 
                 }
                 cout<<" "<<endl;
                 cout<<" "<<endl;
-
+                cout<<"NON - BENDER"<<endl;
                 for (int i = 0; i <personas.size(); i++)
                 {
 
                     if(personas[i]->getElemento()->getClass().compare("non")==0){
                         personas[i]->toString();
-                        cout<<" "<<endl;
                         cout<<" "<<endl;
                     }
                     
@@ -250,6 +250,17 @@ int main()  {
             }
             break;
             case 3:{
+                int borrar;
+                cout<<"Ingrese el subindice que desea borrar: "<<endl;
+                cin>>borrar;
+                while(borrar<0 || borrar>personas.size()){
+                    cout<<"Ingrese un numero Valido"<<endl;
+                    cin>>borrar;
+                } 
+                borrar=borrar-1;
+                delete personas[borrar];
+                personas.erase(personas.begin()+borrar);
+                cout<<"Persona borrada exitosamente"<<endl;
 
             }
             break;

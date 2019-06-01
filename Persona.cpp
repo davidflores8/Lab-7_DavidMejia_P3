@@ -4,6 +4,7 @@
 using std::stringstream;
 using std::endl;
 using std::cin;
+using std::cout;
 
 Persona::Persona(){
 
@@ -40,8 +41,11 @@ Elemento* Persona::getElemento(){
 string Persona::toString(){
     stringstream retorno;
     string r;
-    std::cout<<"nombre de esta vaina: "<<nombre<<"   "<<endl;
-    retorno<<"\nNombre: "<<nombre<<"\nNacion: "<<nacion<<"\nEdad: "<<edad<<"\nSexo: "<<sexo<<"\nElemento: "<<elemento->toString()<<"\n";
+    cout<<"Nombre: "<<nombre<<endl;
+    cout<<"Nacion: "<<nacion<<endl;
+    cout<<"Edad: "<<edad<<endl;
+    cout<<"Sexo: "<<sexo<<endl;
+    cout<<"Elemento: "<<elemento->toString();
     r=retorno.str();
     return r;
 }

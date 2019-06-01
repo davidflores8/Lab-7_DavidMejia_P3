@@ -1,5 +1,8 @@
 #include "Earth.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::stringstream;
 
 Earth::Earth(){
@@ -30,7 +33,8 @@ void Earth::setGraduacion(int g){
 string Earth::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Water bender\nCantidad de coles: "<<coles<<"\nGraduacion de Ojos: "<<graduacion<<"\n";
+    cout<<"Water bender\nCantidad de coles: "<<coles;
+    cout<<"\nGraduacion de Ojos: "<<graduacion;
     r=retorno.str();
     return r;
 }

@@ -1,5 +1,9 @@
 #include "Invocacion.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::cout;
 using std::stringstream;
 
 Invocacion::Invocacion(){
@@ -32,8 +36,11 @@ string Invocacion::getTipo(){
 string Invocacion::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Nombre de la mascota: "<<nombre_e<<"\n Especie: "<<especie<<"\n";
-    retorno<<"Habilidad de la mascota: "<<habilidad<<"\nTipo de mascota: "<<tipo<<"\n";
+    cout<<Poder::toString()<<endl;
+    cout<<"\n Nombre de la mascota: "<<nombre_e;
+    cout<<"\n Especie: "<<especie;
+    cout<<"Habilidad de la mascota: "<<habilidad<<endl;
+    cout<<"\nTipo de mascota: "<<tipo;
     r=retorno.str();
     return r;
     

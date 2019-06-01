@@ -22,7 +22,7 @@ Poder* Maestro::getPoder(){
 string Maestro::toString(){
     stringstream retorno;
     string r;
-    retorno<<"\nNombre: "<<nombre<<"\nNacion: "<<nacion<<"\nEdad: "<<edad<<"\nSexo: "<<sexo<<"\nElemento: "<<elemento->toString()<<"\n";
+    retorno<<Persona::toString();
     retorno<<"Poder: "<<poder->toString()<<"\n";
     r=retorno.str();
     return r;

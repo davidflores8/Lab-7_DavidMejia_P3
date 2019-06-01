@@ -1,5 +1,8 @@
 #include "Water.h"
 #include <sstream>
+#include <iostream>
+using std::cout;
+using std::endl;
 using std::stringstream;
 
 Water::Water(){
@@ -30,7 +33,8 @@ void Water::setArma(string a){
 string Water::toString(){
     stringstream retorno;
     string r;
-    retorno<<"Water Bender\nTribu: "<<tribu<<"\nArma de preferencia: "<<arma<<"\n";
+    cout<<"Water Bender\nTribu: "<<tribu;
+    cout<<"\nArma de preferencia: "<<arma;
     r=retorno.str();
     return r;
     
