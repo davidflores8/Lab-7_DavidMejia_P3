@@ -18,7 +18,9 @@ string Curativos::getTipo(){
 
 string Curativos::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Tipo de curacion : "<<tipo<<"\n";
+    r=retorno.str();
     return retorno.str();
     
 }

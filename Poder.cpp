@@ -1,5 +1,8 @@
 #include "Poder.h"
 #include <sstream>
+#include <iostream>
+using std::endl;
+using std::cin;
 using std::stringstream;
 
 Poder::Poder(){
@@ -21,6 +24,8 @@ int Poder::getNivel(){
 
 string Poder::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Poder: \nNombre: "<<nombre<<"\nNivel de poder: "<<nivel<<"\n";
-    return retorno.str();
+    r=retorno.str();
+    return r;
 }

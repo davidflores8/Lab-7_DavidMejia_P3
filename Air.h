@@ -15,6 +15,7 @@ class Air:public Elemento{
         int getPelo();
         void setPelo(int);
         string toString();
+        string getClass();
 
 };
 #endif

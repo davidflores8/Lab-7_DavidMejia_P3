@@ -29,7 +29,13 @@ void Water::setArma(string a){
 
 string Water::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Water Bender\nTribu: "<<tribu<<"\nArma de preferencia: "<<arma<<"\n";
-    return retorno.str();
+    r=retorno.str();
+    return r;
     
+}
+
+string Water::getClass(){
+    return "Water";
 }

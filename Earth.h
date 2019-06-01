@@ -17,5 +17,6 @@ class Earth:public Elemento{
         void setGraduacion(int);
 
         string toString();
+        string getClass();
 };
 #endif

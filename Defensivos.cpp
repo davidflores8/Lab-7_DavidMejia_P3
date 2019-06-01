@@ -23,7 +23,9 @@ int Defensivos::getDuracion(){
 
 string Defensivos::toString(){
     stringstream retorno;
-    retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Resistencia: "<<resistencia<<"\n Duracion: "<<duracion<<"\n";
-    return retorno.str();
+    string r;
+    retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Resistencia: "<<resistencia<<"\n Duracion: "<<duracion<<"\n"<<endl;
+    r=retorno.str();
+    return r;
     
 }

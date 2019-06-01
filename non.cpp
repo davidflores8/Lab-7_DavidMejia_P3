@@ -26,6 +26,10 @@ int non::getFuerza(){
 
 string non::toString(){
     stringstream retorno;
-    retorno<<"Non-bender\n Trabajo que realiza: "<<trabajo<<"\n Fuerza: "<<fuerza<<"\nVelocidad: "<<velocidad<<"\n";
+    retorno<<"Non-bender\n Trabajo que realiza: "<<trabajo<<"\n Fuerza: "<<fuerza<<"\nVelocidad: "<<velocidad<<"\n"<<endl;
     return retorno.str();
+}
+
+string non::getClass(){
+    return "non";
 }

@@ -23,7 +23,9 @@ int Ofensivo::getFuerza(){
 
 string Ofensivo::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Rango: "<<rango<<"\n Fuerza: "<<fuerza<<"\n";
-    return retorno.str();
+    r=retorno.str();
+    return r;
     
 }

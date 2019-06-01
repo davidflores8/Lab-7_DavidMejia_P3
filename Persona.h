@@ -3,6 +3,11 @@
 #include <string>
 #include "Elemento.h"
 using std::string;
+#include <sstream>
+using std::stringstream;
+#include <iostream>
+using std::cin;
+using std::endl;
 
 
 class Persona{
@@ -11,19 +16,20 @@ class Persona{
         string nacion;
         int edad;
         string sexo;
-        Elemento elemento;
+        Elemento *elemento;
 
         Persona();
-        Persona(string,string,int,string,Elemento);
+        Persona(string,string,int,string,Elemento*);
 
         string getNombre();
         string getNacion();
         int getEdad();
         string getSexo();
-        Elemento getElemento();
+        Elemento* getElemento();
 
-        string toString();
+        virtual string toString();
 
+        ~Persona();
 
 };
 

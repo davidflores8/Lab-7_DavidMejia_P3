@@ -16,5 +16,6 @@ class Fire:public Elemento{
         int getVictorias();
         void setVictorias(int);
         string toString();
+        string getClass();
 };
 #endif

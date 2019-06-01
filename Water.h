@@ -15,6 +15,7 @@ class Water:public Elemento{
         void setTribu(string);
         string getArma();
         void setArma(string);
-        string toString();    
+        string toString(); 
+        string getClass();   
 };
 #endif

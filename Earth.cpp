@@ -29,6 +29,12 @@ void Earth::setGraduacion(int g){
 
 string Earth::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Water bender\nCantidad de coles: "<<coles<<"\nGraduacion de Ojos: "<<graduacion<<"\n";
-    return retorno.str();
+    r=retorno.str();
+    return r;
+}
+
+string Earth::getClass(){
+    return "Earth";
 }

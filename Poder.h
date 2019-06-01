@@ -1,5 +1,8 @@
 #ifndef PODER_H
 #define PODER_H
+#include <iostream>
+using std::cin;
+using std::endl;
 
 #include <string>
 using std::string;

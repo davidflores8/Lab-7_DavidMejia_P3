@@ -29,6 +29,12 @@ void Fire::setVictorias(int v){
 
 string Fire::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Fire Bender:\n Cantidad de cicatrices: "<<cicatrices<<"\nCantidad de victorias en Pai Sho: "<<victorias<<"\n";
-    retorno.str();
+    r=retorno.str();
+    return r;
+}
+
+string Fire::getClass(){
+    return "Fire";
 }

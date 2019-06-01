@@ -31,8 +31,10 @@ string Invocacion::getTipo(){
 
 string Invocacion::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Poder ofensivo: \nNombre: "<<nombre<<"\nNivel: "<<nivel<<"\n Nombre de la mascota: "<<nombre_e<<"\n Especie: "<<especie<<"\n";
     retorno<<"Habilidad de la mascota: "<<habilidad<<"\nTipo de mascota: "<<tipo<<"\n";
-    return retorno.str();
+    r=retorno.str();
+    return r;
     
 }

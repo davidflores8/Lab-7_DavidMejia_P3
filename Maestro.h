@@ -6,14 +6,14 @@
 
 class Maestro:public Persona{
     public:
-        Poder poder;
+        Poder* poder;
 
         Maestro();
-        Maestro(string,string,int,string,Elemento, Poder);
+        Maestro(string,string,int,string,Elemento*, Poder*);
 
-        Poder getPoder();
+        Poder* getPoder();
+        virtual string toString();
 
-        string toString();
-
+        ~Maestro();
 };
 #endif

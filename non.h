@@ -17,5 +17,6 @@ class non:public Elemento{
         int getVelocidad();
 
         string toString();
+        string getClass();
  };
 #endif

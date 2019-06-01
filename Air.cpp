@@ -29,6 +29,12 @@ void Air::setPelo(int p){
 
 string Air::toString(){
     stringstream retorno;
+    string r;
     retorno<<"Air: \nCantidad de flechas: "<<flechas<<"\nCantidad de pelo: "<<pelo<<"\n";
+    r=retorno.str();
     return retorno.str();
+}
+
+string Air::getClass(){
+    return "Air";
 }
